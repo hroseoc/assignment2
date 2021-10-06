@@ -1,0 +1,203 @@
+/*
+A solution extracted from Cosc212 assignment 
+submitted by Angus Fitzgerald
+ */
+@font-face {
+    font-family: 'dymaxionscriptregular';
+    src: url('./fonts/DymaxionScript-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    color: darkslategrey;
+    background-color: #dddddd;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+}
+
+body{
+    width:700px;
+    margin: 0 auto;
+}
+
+header, main, footer{
+    padding:10px;
+    margin:0 0 10px 0;
+    border:1px solid;
+    border-radius: 0 10px 10px 10px;
+    background-color: #eeeeee;
+    color: inherit;
+}
+
+h1, h2{
+    font-family:dymaxionscriptregular, sans-serif ;
+    margin:0;
+}
+
+h1{
+    font-size: 48px;
+    display: inline-block;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 14px;
+    margin: 0;
+}
+
+figure{
+    margin: 0;
+}
+
+/**   Header **/
+header{
+    position:fixed;
+    top:0;
+    width:inherit;
+    z-index: 100;
+}
+
+/** Login form **/
+#loginForm label{
+    display: inline-block;
+    width: 60px;
+}
+
+#loginSubmit{
+    float:right;
+}
+
+#user{
+    float:right;
+}
+
+#logout{
+    display:none;
+}
+
+/** Navigation **/
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    width:75px;
+    margin:0 10px 0 0;
+}
+
+nav li a{
+    display:block;
+}
+
+nav{
+    font-size: 12px;
+    text-align: right;
+    margin-top: 25px;
+}
+
+/**   main element   **/
+/*big top margin to display below header*/
+main{
+    margin-top: 150px;
+}
+
+/**   Index   **/
+#carousel{
+    text-align: center;
+}
+
+
+/**   Film description style   **/
+.film{
+    clear:both;
+    padding:15px 0;
+
+}
+
+.film:last-of-type{
+    min-height: 180px;
+}
+.vehicle-tables{
+    display:block;
+}
+
+.images img{
+    height: 100px;
+    width: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    margin:0 10px;
+}
+
+.film:nth-of-type(odd) img{
+    float:left;
+}
+
+.film:nth-of-type(even) img{
+    float:right;
+}
+
+/**   Contact page   **/
+.contact{
+    list-style-type: none;
+    display: flex;
+}
+.contact li{
+    text-align: center;
+    width:32%;
+}
+ul{
+    text-align: center;
+}
+button {
+    display: block;
+}
+#map{
+    width:680px;
+    height:484px;
+}
+
+/**    Display Cart     **/
+
+#cart{
+    font-size: larger;
+    margin: auto;
+}
+
+#cartContents td{
+    border: 1px solid black;
+}
+#cartContents th{
+    text-align: center;
+}
+
+#cartContents td{
+    padding:2px 10px 2px 2px;
+}
+
+#checkoutForm label{
+    width:70px;
+    display: inline-block;
+}
+
+/**   Popups   **/
+
+.popup{
+    width:150px;
+}
+
+/**   Footer   **/
+footer{
+    text-align: center;
+}
