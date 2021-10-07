@@ -55,7 +55,7 @@ $pdo_dsn = "mysql:host=$db_host;dbname=$db_name";
 
 $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
 
-$q = $pdo->query("SELECT * FROM booking");
+$q = $pdo->query("SELECT * FROM BOOKING");
 
 ?>
 
