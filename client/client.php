@@ -91,6 +91,15 @@ $query = mysqli_query($conn,"SELECT * FROM BOOKING");
 
 $f = fopen("/var/www/client/backUp.csv","w");
 
+fwrite($f, "\n".'firstName'.",".'lastName'.",".'phone'.",".'email'.",".'itemRented');
+
+
+while($row = mysqli_fetch_assoc($query)){
+  fwrite($f,"\n".$row['firstName'].",".$row['lastName'].",".$row['phone'].",".$row['email'].",".$row['itemRented']);
+  
+  }
+
+  fclose($f);
 
   } else{
   echo "Failed to insert to database successfully! Did not execute $sql. " . mysqli_error($conn);
