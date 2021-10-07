@@ -97,9 +97,11 @@ fwrite($f, "\n".'firstName'.",".'lastName'.",".'phone'.",".'email'.",".'itemRent
 while($row = mysqli_fetch_assoc($query)){
   fwrite($f,"\n".$row['firstName'].",".$row['lastName'].",".$row['phone'].",".$row['email'].",".$row['itemRented']);
   
-  }
+}
 
-  fclose($f);
+echo shell_exec("aws s3 mv backUp.csv s3://349-ass1-bucket");
+
+fclose($f);
 
   } else{
   echo "Failed to insert to database successfully! Did not execute $sql. " . mysqli_error($conn);
