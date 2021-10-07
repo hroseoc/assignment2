@@ -86,6 +86,10 @@ $sql = "INSERT INTO booking (firstName,lastName,phone,email,itemRented) VALUES (
 #https://www.w3schools.com/php/func_mysqli_query.asp 
 if(mysqli_query($conn, $sql)){
   echo "You have submitted your booking.";
+
+$query = mysqli_query($conn,"SELECT * FROM BOOKING");
+
+
   } else{
   echo "Failed to insert to database successfully! Did not execute $sql. " . mysqli_error($conn);
   }
