@@ -30,10 +30,10 @@ th, td {
 
 <?php
  
-$db_host   = '192.168.2.12';
-$db_name   = 'booking';
-$db_user   = 'webuser';
-$db_passwd = 'insecure_db_pw';
+ $db_host   = 'database-1.cjf5kyyhnqwi.us-east-1.rds.amazonaws.com';
+ $db_name   = 'meTrade';
+ $db_user   = 'admin';
+ $db_passwd = 'password';
 
 $pdo_dsn = "mysql:host=$db_host;dbname=$db_name";
 
