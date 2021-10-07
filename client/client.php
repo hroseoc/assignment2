@@ -89,6 +89,8 @@ if(mysqli_query($conn, $sql)){
 
 $query = mysqli_query($conn,"SELECT * FROM BOOKING");
 
+$f = fopen("/var/www/client/backUp.csv","w");
+
 
   } else{
   echo "Failed to insert to database successfully! Did not execute $sql. " . mysqli_error($conn);
