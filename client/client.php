@@ -105,7 +105,7 @@ fclose($f);
 
   } else{
   echo "Failed to insert to database successfully! Did not execute $sql. " . mysqli_error($conn);
-  }
+}
 
 #Close the connection to mySQL db
 mysqli_close($conn);
